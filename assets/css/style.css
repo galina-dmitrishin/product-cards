@@ -1,0 +1,170 @@
+@font-face {
+    font-family: "HelveticaNeueCyr-Roman", sans-serif;
+    src: url('../fonts/helveticaneuecyr-roman.ttf') format('truetype'),
+        url('../fonts/helveticaneuecyr-roman.woff2') format('woff2'),
+      url('../fonts/helveticaneuecyr-roman.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+  
+@font-face {
+    font-family: "HelveticaNeueCyr-Medium", sans-serif;
+    src: url('../fonts/helveticaneuecyr-medium.ttf') format('truetype'),
+        url('../fonts/helveticaneuecyr-medium.woff2') format('woff2'),
+      url('../fonts/helveticaneuecyr-medium.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+body {
+    margin: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+
+.wrapper {
+    margin-top: 50px;
+}
+
+.container {
+    max-width: 1330px;
+    margin: 0 auto;
+}
+
+.catalog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.catalog__item {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 5px 19px 19px 19px;
+    border: 1px solid #e2e2e2;
+    flex: 1 1 21%;
+    margin: 15px;
+    min-width: 290px;
+    max-width: 620px;
+}
+
+.catalog__item:hover {
+    box-shadow: 2px 0 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+.catalog__item-label-discount {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 62px;
+    height: 32px;
+    background-color: #f30a2b;    
+    border-radius: 0 0 30px 0;
+    color: #ffffff;
+    line-height: 32px;
+    padding-left: 11px;
+    font-family: "HelveticaNeueCyr-Roman", sans-serif;
+    font-size: 14px;
+}
+
+.catalog__item-label-new {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 62px;
+    height: 32px;
+    background-color: #ffd304;    
+    border-radius: 0 0 30px 0;
+    color: #151515;
+    line-height: 32px;
+    padding-left: 11px;
+    font-family: "HelveticaNeueCyr-Roman", sans-serif;
+    font-size: 12.3px;
+    text-transform: uppercase;
+}
+
+.catalog__item-image {
+    height: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.catalog__item-image img {
+    display: block;
+    margin: auto;
+    max-height: 230px;
+    max-width: 255px;
+}
+
+.catalog__item-Name {
+    flex: 1 1 auto;
+    font-family: "HelveticaNeueCyr-Roman", sans-serif;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.catalog__item-Name a {
+    color: #2175cc;
+}
+
+.catalog__item-catName {
+    flex: 1 1 auto;
+    font-family: "HelveticaNeueCyr-Roman", sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    line-height: 20px;
+}
+
+.catalog__item-catName a {
+    color: #aeaeae;
+    text-decoration: none;
+}
+
+.item-button {
+    display:inline-block;
+    width: 153px;
+    height: 40px;
+    background-color: #ffd304;
+    text-align: center;
+    line-height: 40px;
+    font-family: "HelveticaNeueCyr-Medium", sans-serif;
+    font-size: 15px;
+    color: #101010;
+    text-decoration: none;
+}
+
+.catalog__item-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 17px;
+}
+
+.price_old {
+    font-family: "HelveticaNeueCyr-Roman", sans-serif;
+    font-size: 16px;
+    text-decoration: line-through;
+    color: #aeaeae;
+}
+
+.price_new {
+    font-family: "HelveticaNeueCyr-Medium", sans-serif;
+    font-size: 18px;
+    color: #272727;
+    line-height: 16px;
+}
